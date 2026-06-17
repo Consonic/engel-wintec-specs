@@ -720,7 +720,7 @@ const SECTIONS=[
 const BIG={'engel-imm':['clampForce','injCap'],'engel-elast':['clampForce','injVol'],'wintec':['clampForce','injCap']};
 
 let state={view:'home'};
-function go(s){state=s;render();window.scrollTo(0,0);}
+function go(s){state=s;qEl.value='';wrap.classList.remove('has');render();window.scrollTo(0,0);}
 
 // ---------- renderers ----------
 function home(){
